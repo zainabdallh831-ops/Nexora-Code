@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instractor  | Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body style="  background:linear-gradient(135deg,#fcf8ed,#d8b75b);">
+    
+<div class="edu-layout">
+
+    <aside class="edu-sidebar">
+
+        
+        <div class="edu-logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Instructor Panel</h2>
+        </div>
+
+        <ul class="edu-menu">
+
+            <li class="edu-active" onclick="location.href='instaractor.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li onclick="location.href='addlectures.html'">
+                <i class="fa-solid fa-book"></i>
+                <span>Add Lectures</span>
+            </li>
+
+            <li onclick="location.href='addtask.html'">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Add Tasks</span>
+            </li>
+
+            <li onclick="location.href='studentresponse.html'">
+                <i class="fa-solid fa-square-check"></i>
+                <span>Student Responses</span>
+            </li>
+
+        </ul>
+    </aside>
+
+    <main class="edu-content">
+
+       <div class="task-main">
+
+    <div class="task-header">
+        <h1>Add Tasks 📝</h1>
+        <p>Create and assign tasks for your students.</p>
+    </div>
+
+    <div class="task-container">
+
+        <div class="task-form">
+
+            <h2>Create New Task</h2>
+
+            <label>Task Title</label>
+            <input type="text" placeholder="Enter task title" id="task-title">
+
+            <label>Programming Language</label>
+            <select id="task-lang">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>TypeScript</option>
+            </select>
+
+            <label>Description</label>
+            <textarea placeholder="Write task description..." id="task-desc"></textarea>
+
+            <label>Due Date</label>
+            <input type="date" id="task-date">
+
+            <button class="task-btn" onclick="taskData()">Create Task</button>
+
+        </div>
+
+        <div class="task-preview">
+
+            <h2>Task Preview</h2>
+
+            <div id="task-list"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </main>
+
+</div>
+
+    <script src="type.js" defer></script>
+</body>
+</html>

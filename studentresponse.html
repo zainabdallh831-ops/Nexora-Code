@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instractor  | Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="  background:linear-gradient(135deg,#fcf8ed,#d8b75b);">
+
+<div class="edu-layout">
+
+    <aside class="edu-sidebar">
+
+        <div class="edu-logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Instructor Panel</h2>
+        </div>
+
+        <ul class="edu-menu">
+
+            <li class="edu-active" onclick="location.href='instaractor.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li onclick="location.href='addlectures.html'">
+                <i class="fa-solid fa-book"></i>
+                <span>Add Lectures</span>
+            </li>
+
+            <li onclick="location.href='addtask.html'">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Add Tasks</span>
+            </li>
+
+            <li onclick="location.href='studentresponse.html'">
+                <i class="fa-solid fa-square-check"></i>
+                <span>Student Responses</span>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="edu-content">
+
+        <div class="response-main">
+
+    <div class="response-header">
+        <h1>Student Responses 📄</h1>
+        <p>Review and manage submitted assignments.</p>
+    </div>
+
+    <div class="response-table-card">
+
+        <table class="response-table">
+
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Language</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="student-list"></tbody>
+            <dialog id="taskDialog2" class="review-dialog">
+
+    <h2>Student Submission</h2>
+
+    <label>Student Answer</label>
+
+    <textarea id="student-answer-view" readonly></textarea>
+
+    <label>Status</label>
+
+    <select id="task-status">
+        <option value="Pending">Pending</option>
+        <option value="Solved">Solved</option>
+        <option value="Disagree">Disagree</option>
+    </select>
+
+    <div class="dialog-buttons">
+        <button onclick="saveStatus()">Save</button>
+        <button onclick="closeDialog2()">Cancel</button>
+    </div>
+
+</dialog>
+            
+
+        </table>
+
+    </div>
+
+</div>
+
+    </main>
+
+</div>
+
+<script src="type.js" defer></script>
+</body>
+</html>
+
+
+
+<!-- 
+<tbody>
+
+                <tr>
+                    <td>Zain Hakimi</td>
+                    <td>Responsive Website</td>
+                    <td>HTML/CSS</td>
+                    <td>12 Jun 2025</td>
+                    <td><span class="status submitted">Submitted</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+
+                <tr>
+                    <td>Abdallah Hakimi</td>
+                    <td>JavaScript Quiz</td>
+                    <td>JavaScript</td>
+                    <td>13 Jun 2025</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+
+                <tr>
+                    <td>Mohammed Mustafa</td>
+                    <td>Portfolio Website</td>
+                    <td>HTML/CSS</td>
+                    <td>14 Jun 2025</td>
+                    <td><span class="status submitted">Submitted</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+
+                <tr>
+                    <td>Fatima Dawood</td>
+                    <td>Calculator</td>
+                    <td>JavaScript</td>
+                    <td>15 Jun 2025</td>
+                    <td><span class="status late">Late</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+
+            </tbody> -->

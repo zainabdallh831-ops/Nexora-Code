@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student  | Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body style="   background:linear-gradient(135deg,#fcf8ed,#d8b75b);">
+
+<div class="edu-layout">
+
+    <aside class="edu-sidebar">
+
+        <div class="edu-logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Student Panel</h2>
+        </div>
+
+        <ul class="edu-menu">
+
+            <li class="edu-active" onclick="location.href='student.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li onclick="location.href='lectures.html'">
+                <i class="fa-solid fa-book"></i>
+                <span>Lectures</span>
+            </li>
+
+            <li onclick="location.href='tasks.html'">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tasks</span>
+            </li>
+
+            <li onclick="location.href='schedule.html'">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Your Schedule</span>
+            </li>
+        </ul>
+
+    </aside>
+
+    <main class="edu-content">
+
+        <div class="student-main">
+
+    <div class="student-header">
+        <h1>Welcome Back 👋</h1>
+        <p>Keep track of your learning progress.</p>
+    </div>
+
+    <div class="student-cards">
+
+        <div class="student-card">
+            <i class="fa-solid fa-book-open"></i>
+            <h2>12</h2>
+            <p>Lectures</p>
+        </div>
+
+        <div class="student-card">
+            <i class="fa-solid fa-list-check"></i>
+            <h2>4</h2>
+            <p>Tasks</p>
+        </div>
+
+        <div class="student-card">
+            <i class="fa-solid fa-comment"></i>
+            <h2>8</h2>
+            <p>Comments</p>
+        </div>
+
+    </div>
+
+    <div class="student-section">
+
+        <div class="student-panel">
+
+            <h2><i class="fa-solid fa-book"></i> Latest Lectures</h2>
+
+            <div id="lecture-list2"></div>
+
+        </div>
+
+        <div class="student-grid">
+
+            <div class="student-panel">
+
+                <h2><i class="fa-solid fa-calendar"></i> Schedule</h2>
+
+                <p>10:00 AM - Web Programming</p>
+                <p>2:00 PM - Database</p>
+
+            </div>
+
+            <div class="student-panel">
+
+                <h2><i class="fa-solid fa-list"></i> Tasks</h2>
+
+                <p>Assignment 1</p>
+                <p>Quiz on Friday</p>
+
+            </div>
+
+        </div>
+
+        <div class="student-panel">
+
+            <h2><i class="fa-solid fa-message"></i> Teacher Comments</h2>
+
+            <p>Excellent work on your previous assignment. Keep it up!</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </main>
+
+</div>
+
+<script src="type.js" defer></script>
+</body>
+</html>

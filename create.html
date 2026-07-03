@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Book Store</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body style=" background:#f5f3ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;">
+
+<div class="register-container">
+
+    <div class="left-side">
+
+        <h1>Join Nexora Code</h1>
+
+        <p>
+            Create your account and start exploring thousands of books,
+            courses, and learning resources today.
+        </p>
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+    </div>
+
+    <div class="right-side">
+
+        <h2>Create Account</h2>
+
+        <form>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Full Name" id="name-var">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" id="email-var">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="pass-var">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" id="confirm-var">
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <select id="selection">
+                    <option selected hidden>Student Or Instarctor?</option>
+                    <option id="option-1st">Student</option>
+                    <option id="option-2in">Instractor</option>
+                </select>
+            </div>
+
+            <div class="input-box" id="student-Input">
+                <i class="fa-solid fa-pager"></i>
+                <select id="course-selection">
+                    <option selected hidden>Select Your Course</option>
+                    <option id="option-1ht">HTML</option>
+                    <option id="option-2cs">CSS</option>
+                    <option id="option-3ts">TypeScript</option>
+                </select>
+            </div>
+
+            <button type="submit" id="cre-btn" onclick="saveData()">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="signin.html">Sign In</a>
+        </p>
+
+    </div>
+
+</div>
+<script src="type.js" defer></script>
+
+</body>
+</html>

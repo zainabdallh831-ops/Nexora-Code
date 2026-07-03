@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instractor  | Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body style="  background:linear-gradient(135deg,#fcf8ed,#d8b75b);">
+
+<div class="edu-layout">
+
+    <aside class="edu-sidebar">
+
+        <div class="edu-logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Instructor Panel</h2>
+        </div>
+
+        <ul class="edu-menu">
+
+            <li class="edu-active" onclick="location.href='instaractor.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li onclick="location.href='addlectures.html'">
+                <i class="fa-solid fa-book"></i>
+                <span>Add Lectures</span>
+            </li>
+
+            <li onclick="location.href='addtask.html'">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Add Tasks</span>
+            </li>
+
+            <li onclick="location.href='studentresponse.html'">
+                <i class="fa-solid fa-square-check"></i>
+                <span>Student Responses</span>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="edu-content">
+<div class="lecture-main">
+
+    <div class="lecture-header">
+        <h1>Add Lecture 📚</h1>
+        <p>Create a new lecture for your students.</p>
+    </div>
+
+    <div class="lecture-container">
+
+        <div class="lecture-form">
+
+            <h2>Create New Lecture</h2>
+
+            <label>Programming Language</label>
+            <select id="lec-lang">
+                <option>Select Language</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>TypeScript</option>
+            </select>
+
+            <label>Lecture Title</label>
+            <input type="text" placeholder="Enter lecture title" id="lec-title">
+
+            <label>Description</label>
+            <textarea placeholder="Enter lecture description..." id="lec-desc"></textarea>
+
+            <button class="lecture-btn" id="add-btn" onclick="inputData()">Add Lecture</button>
+
+        </div>
+
+        <div class="lecture-preview">
+
+            <h2>Lecture Preview</h2>
+
+               <div id="lecture-list">
+
+               </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </main>
+
+</div>
+
+<script src="type.js" defer></script>
+</body>
+</html>

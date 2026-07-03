@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student  | Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body style="   background:linear-gradient(135deg,#fcf8ed,#d8b75b);">
+
+<div class="edu-layout">
+
+    <aside class="edu-sidebar">
+
+        <div class="edu-logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Student Panel</h2>
+        </div>
+
+        <ul class="edu-menu">
+
+            <li class="edu-active" onclick="location.href='student.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li onclick="location.href='lectures.html'">
+                <i class="fa-solid fa-book"></i>
+                <span>Lectures</span>
+            </li>
+
+            <li onclick="location.href='tasks.html'">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tasks</span>
+            </li>
+
+            <li onclick="location.href='schedule.html'">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Your Schedule</span>
+            </li>
+        </ul>
+
+    </aside>
+
+    <main class="edu-content">
+
+       <div class="student-task-main">
+
+    <div class="student-task-header">
+        <h1>My Tasks 📝</h1>
+        <p>Complete your assignments before the deadline.</p>
+    </div>
+
+    <div class="student-task-grid">
+
+        <div id="task-list2"></div>
+
+
+        </div>
+
+        <dialog id="taskDialog">
+    <h2>Submit Task</h2>
+
+    <textarea
+        id="studentAnswer"
+        placeholder="Write your answer here...">
+    </textarea>
+
+    <br><br>
+
+    <button id="sendTask" onclick="submitTask()">Send Task</button>
+    <button id="closeDialog">Cancel</button>
+</dialog>
+
+    </div>
+
+</div>
+    </main>
+
+</div>
+
+<script src="type.js" defer></script>
+</body>
+</html>
